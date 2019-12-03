@@ -109,7 +109,7 @@ p {
 @media screen and (min-width: 1200px) {
     .characterContainer {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        height: 100vh;
+        height: 120vh;
         margin-bottom: 0;
         padding-bottom: 0;
     }

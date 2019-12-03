@@ -24,7 +24,8 @@ class ClueProvider extends Component {
             canQuestion: false,
             hideClues: [false, false, false, false, false, false, false, false, false, false, false],
             showCharAlibi: [false, false, false, false, false, false],
-            attempts: 3
+            attempts: 3,
+            canPlay: false
         }
     }
 
@@ -153,12 +154,23 @@ class ClueProvider extends Component {
             canQuestion: false,
             hideClues: [false, false, false, false, false, false, false, false, false, false, false],
             showCharAlibi: [false, false, false, false, false, false],
-            attempts: 3
+            attempts: 3,
+            canPlay: false
         })
         this.getAll()
         
     }
+    nowPlay = () => {
+        this.setState({
+            canPlay: true
+        })
+    }
 
+    stopPlay = () => {
+        this.setState({
+            canPlay: false
+        })
+    }
     
     updateClickCount = () => {
         this.setState({clickedCount: this.state.clickedCount + 1})
@@ -231,7 +243,9 @@ class ClueProvider extends Component {
                     handleTutorial: this.handleTutorial,
                     handleHideClues: this.handleHideClues,
                     handleShowCharAlibi: this.handleShowCharAlibi,
-                    tries: this.tries
+                    tries: this.tries,
+                    nowPlay: this.nowPlay,
+                    stopPlay: this.stopPlay
                 }}>
                 {this.props.children}
             </ClueContext.Provider>
