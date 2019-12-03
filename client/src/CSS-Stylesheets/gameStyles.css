@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:light,regular,bold,italic|Montserrat:light,regular,bold,black,italic');
+
+.gameDiv {
+    background: url("../images/Bedroom.jpg");
+    background-size: auto;
+    background-position: center;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    height: 1024px;
+    width: 2308px;
+    max-height: 1025px;
+}
+.gameForm {
+    margin-top: 50px;
+    width: 100vw;
+}
+.gameInterviewButton {
+    margin: 10px;
+    font-family: Montserrat;
+}
+.gameInterviewSuspect {
+    margin-top: 10px;
+    font-family: Montserrat;
+    font-weight: 600;
+    background-color: white;
+    border: 2px solid black;
+    min-height: 100px;
+}
+.gameTutorial {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: 540px;
+    margin-top: -180px;
+    margin-left: -270px;
+    border-radius: 8px;
+    background-color: rgba(250, 235, 215, 0.788);
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.671) 2px 2px 10px;
+
+}
+.gameTutorial > button {
+    height: 30px;
+    width: 60px;
+    font-size: 16px;
+    margin: 0px 8px 20px 8px;
+    background-color: #c8102e;
+    border-radius: 0px 8px 0px 8px;
+    box-shadow: rgba(0, 0, 0, 0.671) 2px 2px 5px;
+    border: none;
+}
+.gameTutorialHeader {
+    margin: 35px 0px 20px 0px;
+    font-family: Montserrat;
+    font-size: 28px;
+}
+.gameTutorialButton {
+    font-family: Roboto;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+.gameTutorialText {
+    font-family: Roboto;
+    font-size: 16px;
+    padding: 25px;
+}
+.gameClueDivSHOW-1 {
+    height: auto;
+    width: 175px;
+    background-color: rgba(250, 235, 215, 0.788);
+    position: absolute;
+    top: 250px;
+    left: 2055px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #666 5px 5px 7px;
+}
+.gameClueDivHIDE-1 {
+    height: 160px;
+    width: 180px;
+    position: absolute;
+    top: 315px;
+    left: 2065px;
+}
+.gameClueDivHIDE-1:hover {
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(245, 232, 161, 0.507) 20%, rgba(245, 232, 161, 0) 70%);
+}
+.gameClueDivSHOW-2 {
+    height: auto;
+    width: 175px;
+    background-color: rgba(250, 235, 215, 0.788);
+    position: absolute;
+    top: 500px;
+    left: 275px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #666 5px 5px 7px;
+}
+.gameClueDivHIDE-2 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 575px;
+    left: 365px;    
+}
+.gameClueDivHIDE-2:hover {
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(245, 232, 161, 0.507) 20%, rgba(245, 232, 161, 0) 70%);
+}
+
+.gameClueDivSHOW-3 {
+    height: auto;
+    width: 175px;
+    background-color: rgba(250, 235, 215, 0.788);
+    position: absolute;
+    top: 760px;
+    left: 300px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #666 5px 5px 7px;
+}
+.gameClueDivHIDE-3 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 850px;
+    left: 350px;
+}
+.gameClueDivHIDE-3:hover {
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(245, 232, 161, 0.507) 20%, rgba(245, 232, 161, 0) 70%);
+}
+.gameClueDivSHOW-4 {
+    height: auto;
+    width: 175px;
+    background-color: rgba(250, 235, 215, 0.788);
+    position: absolute;
+    top: 485px;
+    left: 695px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #666 5px 5px 7px;
+}
+.gameClueDivHIDE-4 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 600px;
+    left: 745px;
+}
+.gameClueDivHIDE-4:hover {
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(245, 232, 161, 0.507) 20%, rgba(245, 232, 161, 0) 70%);
+}
+.gameClueDivSHOW-5 {
+    height: auto;
+    width: 175px;
+    background-color: rgba(250, 235, 215, 0.788);
+    position: absolute;
+    top: 550px;
+    left: 490px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #666 5px 5px 7px;
+}
+.gameClueDivHIDE-5 {
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    top: 600px;
+    left: 500px;
+}
+.gameClueDivHIDE-5:hover {
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(245, 232, 161, 0.507) 20%, rgba(245, 232, 161, 0) 60%);
+}
+.gameClueDivSHOW-6 {
+    height: auto;
+    width: 175px;
+    background-color: rgba(250, 235, 215, 0.788);
+    position: absolute;
+    top: 525px;
+    left: 885px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #666 5px 5px 7px;
+}
+.gameClueDivHIDE-6 {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 555px;
+    left: 850px;
+}
+.gameClueDivHIDE-6:hover {
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(245, 232, 161, 0.253) 20%, rgba(245, 232, 161, 0) 65%);
+}
+.gameClueDivSHOW-7 {
+    height: auto;
+    width: 175px;
+    background-color: rgba(250, 235, 215, 0.788);
+    position: absolute;
+    top: 565px;
+    left: 1130px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #666 5px 5px 7px;
+}
+.gameClueDivHIDE-7 {
+    height: 80px;
+    width: 100px;
+    position: absolute;
+    top: 640px;
+    left: 1180px;
+}
+.gameClueDivHIDE-7:hover {
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(245, 232, 161, 0.507) 20%, rgba(245, 232, 161, 0) 70%);
+}
+.gameClueDivSHOW-8 {
+    height: auto;
+    width: 175px;
+    background-color: rgba(250, 235, 215, 0.788);
+    position: absolute;
+    top: 805px;
+    left: 1115px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #666 5px 5px 7px;
+}
+.gameClueDivHIDE-8 {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 880px;
+    left: 1165px;
+}
+.gameClueDivHIDE-8:hover {
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(245, 232, 161, 0.507) 20%, rgba(245, 232, 161, 0) 70%);
+}
+.gameClueDivSHOW-9 {
+    height: auto;
+    width: 175px;
+    background-color: rgba(250, 235, 215, 0.788);
+    position: absolute;
+    top: 780px;
+    left: 1970px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #666 5px 5px 7px;
+}
+.gameClueDivHIDE-9 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 790px;
+    left: 2030px;
+}
+.gameClueDivHIDE-9:hover {
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(245, 232, 161, 0.507) 20%, rgba(245, 232, 161, 0) 70%);
+}
+.gameClueDivSHOW-10 {
+    height: auto;
+    width: 175px;
+    background-color: rgba(250, 235, 215, 0.788);
+    position: absolute;
+    top: 555px;
+    left: 1450px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #666 5px 5px 7px;
+}
+.gameClueDivHIDE-10 {
+    height: 120px;
+    width: 90px;
+    position: absolute;
+    top: 580px;
+    left: 1500px;
+}
+.gameClueDivHIDE-10:hover {
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(245, 232, 161, 0.507) 20%, rgba(245, 232, 161, 0) 70%);
+}
+.gameClueDivSHOW-11 {
+    height: auto;
+    width: 175px;
+    background-color: rgba(250, 235, 215, 0.788);
+    position: absolute;
+    top: 80px;
+    left: 1165px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: #666 5px 5px 7px;
+}
+.gameClueDivHIDE-11 {
+    height: 70px;
+    width: 150px;
+    position: absolute;
+    top: 80px;
+    left: 1165px;
+}
+.gameClueDivHIDE-11:hover {
+    border-radius: 50%;
+    background-image: radial-gradient(circle, rgba(245, 232, 161, 0.507) 20%, rgba(245, 232, 161, 0) 70%);
+}
+.gameClueTitle {
+    font-family: Roboto;
+    font-weight: 600;
+    margin: 5px auto;
+    font-size: 18px;
+    text-align: center;
+}
+.gameClueDescription {
+    font-family: Montserrat;
+    font-weight: 500;
+    margin: 5px auto;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+}
+.gameAddClueButton {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px auto;
+    background: maroon;
+    font-size: 13px;
+    color: whitesmoke;
+}
+.hidden {
+    display: none;
+}
