@@ -11,15 +11,14 @@ class Navbar extends Component {
     //     super()
     // }
 
-    componentDidUpdate()
-      {  const themeSong = new Audio(song)
-       if (this.props.canPlay){
-           themeSong.play()
+    componentDidUpdate(){
+        const themeSong = new Audio(song)
+        if(this.props.canPlay) {
+           themeSong.play() 
            this.props.stopPlay()
         }
-    }
         
-    
+}
     render() {
 
         // let prevScrollpos = window.pageYOffset;

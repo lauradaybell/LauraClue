@@ -29,6 +29,17 @@ class ClueProvider extends Component {
         }
     }
 
+    sound = () => {
+        this.setState({
+            canPlay: true
+        })
+    }
+
+    stopPlay = () => {
+        this.setState ({
+            canPlay: false
+        })
+    }
     tries = () => {
         this.setState(prevState => ({
             attempts: prevState.attempts -= 1
@@ -160,17 +171,7 @@ class ClueProvider extends Component {
         this.getAll()
         
     }
-    nowPlay = () => {
-        this.setState({
-            canPlay: true
-        })
-    }
 
-    stopPlay = () => {
-        this.setState({
-            canPlay: false
-        })
-    }
     
     updateClickCount = () => {
         this.setState({clickedCount: this.state.clickedCount + 1})
@@ -244,7 +245,7 @@ class ClueProvider extends Component {
                     handleHideClues: this.handleHideClues,
                     handleShowCharAlibi: this.handleShowCharAlibi,
                     tries: this.tries,
-                    nowPlay: this.nowPlay,
+                    sound: this.sound,
                     stopPlay: this.stopPlay
                 }}>
                 {this.props.children}
