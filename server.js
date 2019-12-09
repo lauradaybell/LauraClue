@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const morgan = require('morgan')
 const mongoose = require('mongoose')
+const path = require("path")
 
 app.use(express.json())
 app.use(morgan("dev"))
@@ -14,11 +15,26 @@ mongoose.connect('mongodb://localhost:27017/cluedb',
         useUnifiedTopology: true
     
     }, () => console.log("Connected to MongoDB" ))
-
+    app.use(express.static(path.join(__dirname, "client", "build")))
     app.use("/clue", require("./routes/ClueRouter"))
     app.use("/character", require("./routes/CharacterRouter"))
     app.use("/weapon", require("./routes/WeaponRouter"))
 
+    app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
     app.listen(7000, () => {
         console.log('server is running')
     })
+
+  
+
+
+
+
+
+
+
+
+// app.listen(...)

@@ -25,13 +25,19 @@ class ClueProvider extends Component {
             hideClues: [false, false, false, false, false, false, false, false, false, false, false],
             showCharAlibi: [false, false, false, false, false, false],
             attempts: 3,
-            canPlay: false
+            canPlay: false,
+            hasPlayed: false
         }
     }
 
     sound = () => {
         this.setState({
             canPlay: true
+        })
+    }
+    songHasPlayed = () => {
+        this.setState ({
+            hasPlayed: true
         })
     }
 
@@ -166,7 +172,8 @@ class ClueProvider extends Component {
             hideClues: [false, false, false, false, false, false, false, false, false, false, false],
             showCharAlibi: [false, false, false, false, false, false],
             attempts: 3,
-            canPlay: false
+            canPlay: false,
+            hasPlayed: false
         })
         this.getAll()
         
@@ -246,7 +253,8 @@ class ClueProvider extends Component {
                     handleShowCharAlibi: this.handleShowCharAlibi,
                     tries: this.tries,
                     sound: this.sound,
-                    stopPlay: this.stopPlay
+                    stopPlay: this.stopPlay,
+                    songHasPlayed: this.songHasPlayed
                 }}>
                 {this.props.children}
             </ClueContext.Provider>

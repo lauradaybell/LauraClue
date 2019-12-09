@@ -13,9 +13,10 @@ class Navbar extends Component {
 
     componentDidUpdate(){
         const themeSong = new Audio(song)
-        if(this.props.canPlay) {
-           themeSong.play() 
-           this.props.stopPlay()
+        if(!this.props.hasPlayed && this.props.canPlay) {
+            themeSong.play()
+            this.props.stopPlay()
+            this.props.songHasPlayed()
         }
         
 }
