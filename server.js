@@ -19,8 +19,8 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/cluedb',
         useUnifiedTopology: true
     
     }, () => console.log("Connected to MongoDB" ))
-    app.use("/clue", require("./routes/ClueRouter"))
-    app.use("/character", require("./routes/CharacterRouter"))
+    app.use("/clue", require("./routes/clueRouter"))
+    app.use("/character", require("./routes/characterRouter"))
     app.use("/weapon", require("./routes/WeaponRouter"))
 
     app.get("*", (req, res) => {

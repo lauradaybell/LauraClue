@@ -1,6 +1,6 @@
 const express = require('express')
 const characterRouter = express.Router()
-const Character = require('../models/Character')
+const Character = require('../models/character')
 
 
 characterRouter.route('/')
