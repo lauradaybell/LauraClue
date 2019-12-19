@@ -3,11 +3,13 @@ const app = express()
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 const path = require("path")
+const PORT = process.env.PORT || 7000
+require("dotenv").config()
 
 app.use(express.json())
 app.use(morgan("dev"))
 
-mongoose.connect('mongodb://localhost:27017/cluedb',
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/cluedb',
     {
         useNewUrlParser: true,
         useFindAndModify: false,
@@ -24,7 +26,7 @@ mongoose.connect('mongodb://localhost:27017/cluedb',
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
-    app.listen(7000, () => {
+    app.listen(PORT, () => {
         console.log('server is running')
     })
 

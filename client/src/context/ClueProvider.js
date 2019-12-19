@@ -116,7 +116,6 @@ class ClueProvider extends Component {
 
     
 
-    // function so player can set their title and name
     chooseName = (name, title) => {
         this.setState({name: name})
         this.setState({title: title})
@@ -213,12 +212,8 @@ class ClueProvider extends Component {
 
     handleHideClues = (clueNum) => {
         const currentArr = this.state.hideClues
-        // console.log(`firstArr: ${currentArr}`)
         const isHidden = !this.state.hideClues[clueNum]
         currentArr.splice(clueNum, 1, isHidden)
-        // console.log(`secondeArr: ${currentArr}`)
-        // console.log(`clueNum: ${clueNum}`)
-        // console.log(`isHidden: ${isHidden}`)
         this.setState(() => ({
             hideClues: currentArr
         }))

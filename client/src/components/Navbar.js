@@ -1,15 +1,12 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import {withClue} from '../context/ClueProvider';
-// import Logo from '../images/MM.png'
 import LogoWide from '../images/MM-wide.png'
 
 import song from '../sounds/dark-winter.mp3'
 
 class Navbar extends Component {
-    // constructor(){
-    //     super()
-    // }
+    
 
     componentDidUpdate(){
         const themeSong = new Audio(song)
@@ -22,16 +19,6 @@ class Navbar extends Component {
 }
     render() {
 
-        // let prevScrollpos = window.pageYOffset;
-        // window.onscroll = function() {
-        // let currentScrollPos = window.pageYOffset;
-        //     if (prevScrollpos > currentScrollPos) {
-        //         document.getElementById("Navbar").style.top = "0";
-        //     } else {
-        //         document.getElementById("Navbar").style.top = "-50px";
-        //     }
-        //     prevScrollpos = currentScrollPos;
-        // }
 
         return(
             <div>

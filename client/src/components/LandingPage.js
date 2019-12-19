@@ -11,11 +11,6 @@ class LandingPage extends Component {
         }
     }
 
-    // handleSubmit = (e, name, title) => {
-    //     e.preventDefault()
-    //     this.props.chooseName(name, title)
-    //     alert('Welcome to the game!')
-    // }
 
     handleChange = e => {
         const { name, value } = e.target
@@ -28,14 +23,13 @@ class LandingPage extends Component {
         this.props.history.push('/game')
         this.props.sound()
     }
-        //route to main page of game, call getAll function
 
     render(){
         
         return(
         <div className='landingDivImage'>
             <div className='landingDiv'>
-                {/* <form onSubmit={(e) => this.handleSubmit(e, this.state.name, this.state.title)} className='landingForm'>  */}
+                
                 <form className='landingForm'> 
                     <h1 className='landingWelcome'>Welcome to Tudor Manor</h1>
                     <p className='landingWelcomeExplanation'>Set up your player character and help us find the murderer:</p>
@@ -51,12 +45,9 @@ class LandingPage extends Component {
                         <option value='Inspector' >Inspector</option>
                     </select>
                     <input onChange={this.handleChange} value={this.state.name} name='name' type="text" placeholder="Name"className='landingTitleInput' />
-                    {/* <button className='landingTitleSubmit' >Submit</button> */}
                     <button onClick={this.handleClick} className='startGameButton'>Start Game</button>
                 </form>
-                {/* <div className='startGameButtonDiv'>
-                    <button onClick={this.handleClick} className='startGameButton'>Start Game</button>
-                </div> */}
+                
             </div>
          </div>
         )

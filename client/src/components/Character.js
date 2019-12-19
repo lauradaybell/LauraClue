@@ -77,8 +77,6 @@ class Character extends Component {
                         <div className='charCards'>
                             <img className='charCardImage' src={imgUrl} alt="pic"/>
                             <h5>{name}, {age}</h5>
-                            {/* <h6>{gender}</h6> */}
-                            {/* <h6>{age}</h6> */}
                             <p>{description}</p>
                             {
                                 this.state.canQuestion ?
@@ -86,8 +84,7 @@ class Character extends Component {
                                 :
                                 null
                             }
-                        {/* </div>
-                        <div className="questionSus"> */}
+                        
                             {
                                 this.props.showAlibi || this.props.showCharAlibi[this.props.index]
                                 ?

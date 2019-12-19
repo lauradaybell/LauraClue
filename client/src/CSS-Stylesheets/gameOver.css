@@ -88,8 +88,6 @@ html {
 .wonMessage {
     margin-top: 150px;
     text-align: center;
-    /* animation-name: lostMessage; */
-    /* animation-duration: 4s; */
     color: #d1ab10;
     padding-top: 50px;
     font-size: 80px;
@@ -106,8 +104,6 @@ html {
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     margin-top: 70px;
     text-align: center;
-    /* animation-name: lostMessage; */
-    /* animation-duration: 4s; */
     color: #c8102e;
     padding-top: 90px;
     font-size: 80px;
@@ -119,8 +115,6 @@ html {
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     margin-top: 20px;
     text-align: center;
-    /* animation-name: lostMessage; */
-    /* animation-duration: 4s; */
     color: #d1ab10;
     padding: 50px;
     font-size: 35px;
