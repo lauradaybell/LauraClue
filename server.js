@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/cluedb',
     }, () => console.log("Connected to MongoDB" ))
     app.use("/clue", require("./routes/clueRouter"))
     app.use("/character", require("./routes/characterRouter"))
-    app.use("/weapon", require("./routes/WeaponRouter"))
+    app.use("/weapon", require("./routes/weaponRouter"))
 
     app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));

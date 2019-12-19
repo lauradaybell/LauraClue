@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
+//hi
+
 const weaponSchema = new Schema ({
     name: {
         type: String,

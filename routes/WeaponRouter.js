@@ -1,7 +1,6 @@
 const express = require('express')
-const weaponRouter = express.Router()
 const Weapon = require('../models/weapon')
-
+const weaponRouter = express.Router()
 
 weaponRouter.route('/')
     .get ((req, res) => {

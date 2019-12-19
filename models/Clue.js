@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
+
 const clueSchema = new Schema ({
     name: {
         type: String,
@@ -9,6 +10,6 @@ const clueSchema = new Schema ({
     description: String,
     character: String
 })
-
+// new comment
 
 module.exports = mongoose.model("Clue", clueSchema)
